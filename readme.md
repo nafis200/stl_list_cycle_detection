@@ -42,3 +42,107 @@ list<int>l(2,3);
         cout << val << "\n";
     }
 
+
+<!-- Erase -->
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    list<int>l = {10,20,30,40,50};
+
+    // erase
+
+    l.erase(next(l.begin(),1));
+
+
+    for(auto val : l){
+        cout << val << "\n";
+    }
+}
+
+# Multiple Erase
+
+list<int>l = {10,20,30,40,50};
+
+    // erase
+
+    l.erase(next(l.begin(),1),next(l.begin(),4));
+
+
+    for(auto val : l){
+        cout << val << "\n";
+    }
+
+# replace
+
+ list<int> l = {10, 20, 30, 40, 50};
+
+    replace(l.begin(), l.end(), 20, 30);
+
+    for (auto val : l)
+    {
+        cout << val << "\n";
+    }
+
+# find function
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    list<int> l = {10, 20, 30, 40, 50};
+
+    auto it = find(l.begin(),l.end(),20);
+
+    if(it != l.end()){
+        cout << "Found\n";
+    }
+    else{
+        cout << "Not found\n";
+    }
+
+    for (auto val : l)
+    {
+        cout << val << "\n";
+    }
+}
+
+# remove
+
+list<int> l = {10, 20, 30, 40, 50,10};
+
+    l.remove(10);
+
+    for (auto val : l)
+    {
+        cout << val << "\n";
+    }
+
+# sort function
+
+list<int> l = {10, 20, 30, 40, 50,10};
+
+    l.sort();
+    l.sort(greater<int>());
+
+    for (auto val : l)
+    {
+        cout << val << "\n";
+    }
+
+# unique pasapasi index e kaj kore sort thakte hoy always
+
+ list<int> l = {10, 20, 30, 40, 50,10};
+
+    l.sort();
+    l.unique();
+
+    for (auto val : l)
+    {
+        cout << val << "\n";
+    }
+
+# front and back
+
+cout << l.front() << " " << l.back() << "\n";
