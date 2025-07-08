@@ -12,7 +12,11 @@ int main(){
     //     cout << *it << "\n";
     // }
 
-    for(auto val : l3){
+    l3.clear();
+
+    l2.resize(2);
+
+    for(auto val : l2){
         cout << val << "\n";
     }
 }
